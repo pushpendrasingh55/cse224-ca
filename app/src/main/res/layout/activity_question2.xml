@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F5DE15"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginRight="-5dp"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="Register For Competition"
+        android:textColor="#ED0101"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="299dp"
+        android:layout_marginRight="299dp"
+        android:text="Name: "
+        android:textColor="#ED0101"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/yourname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        android:gravity="center"
+        android:hint="Full name"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/yourname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="295dp"
+        android:text="Degree: "
+        android:textColor="#ED0101"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/gender"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/btech"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:text="B.Tech" />
+
+        <RadioButton
+            android:id="@+id/btechs"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="B.Tech with specialization"
+
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/radio"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="198dp"
+        android:layout_marginRight="198dp"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="Email Address: "
+        android:textColor="#ED0101"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/youremail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/email"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:gravity="center"
+        android:hint="name@gmail.com"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/youremail"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="Registration no : "
+        android:textColor="#ED0101"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/regno"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pass"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:gravity="center"
+        android:hint="11910838"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/clgnme"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/regno"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="College Name : "
+        android:textColor="#ED0101"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/yourcllg"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/clgnme"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:autofillHints="Lovely Profession University"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:inputType="text"
+        android:hint="LPU"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/yourcllg"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:singleLine="true"
+        android:text="Do You want us to send you notification"
+        android:textColor="#ED0101"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn"
+        android:layout_width="148dp"
+        android:layout_height="64dp"
+        android:layout_alignTop="@id/checkbox"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Sign in"
+        android:textColor="#ED0101"
+        app:cornerRadius="5dp"
+        app:strokeColor="#ED0101"
+        app:strokeWidth="5dp" />
+
+
+</RelativeLayout>
